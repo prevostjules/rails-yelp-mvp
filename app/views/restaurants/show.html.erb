@@ -7,5 +7,6 @@
     <li><%= review.content %> / <%= review.rating %></li>
   <% end %>
 </ul>
-<%= link_to "Write a review", new_restaurant_review_path(@restaurant) %>
 <%= link_to "Go to list", restaurants_path %>
+
+<%= render "reviews/form", review: @review %>
